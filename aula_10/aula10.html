@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 10</title>
+</head>
+<body>
+    <header>
+        <nav></nav>
+    </header>
+    <main>
+        <section>
+            <form action="#" method="get">
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" required
+                    minlength="5"
+                    maxlength="30"
+                    placeholder="Digite seu nome completo"
+                    >
+                </div>
+               <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+               </div>
+               <div>
+                    <label for="idade">Idade:</label>
+                    <input type="number" name="idade" id="idade" required>
+               </div>
+                <div id="form-group">
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" id="senha" required>
+                </div>
+                <div id="radio-group">
+                    <input type="radio" name="genero" value="masculino" checked>Masculino</div>
+                    <input type="radio" name="genero" value="feminino">Feminino</imput>
+                    <input type="radio" name="genero" value="outros">Outros</imput>
+                </div>
+                <div id="check-group">
+                    <input id="" type="checkbox" name="tecnologia" value="tecnologia">
+                    <input id="" type="checkbox" name="tecnologia" value="musica">
+                    <input id="" type="checkbox" name="esporte" value="esporte">
+                </div>
+                <div id="text-area">
+                    <textarea name="sobre" id="sobre" rows="10" cols="30"></textarea>
+                </div>
+                <div id="option-group">
+                     <select name="" id="">
+                        <option value="brasil">Brasil</option>
+                        <option value="uruguai">Uruguai</option>
+                        <option value="china">China</option>
+                     </select>   
+                </div>
+                <hr>
+                <input type="submit" name="submit" id="submit" value="Postar">
+            </form>
+        </section>
+    </main>
+</body>
+</html>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    form {
+        background-color: rgb(34, 33, 33);
+        color: white;
+        padding: 20px;
+    }
+    #radio-group {
+        display: block;
+        
+    } 
+</style>
